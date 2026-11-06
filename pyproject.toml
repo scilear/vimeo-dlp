@@ -7,7 +7,7 @@ name = "vimeo-dlp"
 version = "0.1.0"
 description = "Download Vimeo videos and transcripts without a Vimeo account"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = "MIT"
 license-files = ["LICENSE"]
 authors = [{ name = "Fabien", email = "scilear@gmail.com" }]
@@ -37,7 +37,7 @@ testpaths = ["tests"]
 
 [tool.ruff]
 line-length = 100
-target-version = "py39"
+target-version = "py310"
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "B"]

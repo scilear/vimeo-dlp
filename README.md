@@ -23,7 +23,7 @@ python3 -m venv ~/.local/share/vimeo-dlp/venv
 ln -sf ~/.local/share/vimeo-dlp/venv/bin/vimeo-dlp ~/.local/bin/vimeo-dlp
 ```
 
-Requires Python ≥ 3.9, [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) and
+Requires Python ≥ 3.10, [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) and
 [`ffmpeg`](https://ffmpeg.org) in `PATH` for the video download.
 
 ## Usage
