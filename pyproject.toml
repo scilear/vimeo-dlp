@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vimeo-dlp"
+version = "0.1.0"
+description = "Download Vimeo videos and transcripts without a Vimeo account"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Fabien", email = "scilear@gmail.com" }]
+keywords = ["vimeo", "yt-dlp", "transcript", "subtitles", "hls", "downloader"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Video",
+]
+dependencies = ["curl_cffi>=0.6"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+vimeo-dlp = "vimeo_dlp.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/scilear/vimeo-dlp"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B"]
