@@ -10,3 +10,4 @@ dist/
 *.mp4
 *.mkv
 *.webm
+.ruff_cache/
